@@ -33,7 +33,7 @@
             <a href="thoughts.html" class="nav-icon active" aria-label="Thoughts" title="Thoughts">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10"/></svg>
             </a>
-            <a href="contact.html" class="nav-icon" aria-label="Contact" title="Contact">
+            <a href="#contact" class="nav-icon" aria-label="Contact" title="Contact">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
             </a>
             <button id="themeToggle" class="nav-icon theme-toggle" aria-label="Toggle Theme" style="background: transparent; border: none; cursor: pointer; padding: 0;">
@@ -55,35 +55,280 @@
     <main>
         <!-- Blog Section -->
         <section id="thoughts" class="blog section page-top animate-on-scroll">
-            <div class="container">
-                <h2 class="section-title">Thoughts</h2>
-                <div class="blog-list">
-                    <a href="#" class="blog-card">
+            <div class="subpage-layout">
+                <!-- Profile Card Sidebar -->
+                <div class="profile-card">
+                    <div class="profile-deco-ring"></div>
+                    <div class="profile-photo-wrap">
+                        <img src="image/profile pix.webp" alt="Abdulwakeel Jimoh">
+                    </div>
+                    <h2 class="profile-name">Abdulwakeel Jimoh</h2>
+                    <div class="profile-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20" height="20"><path d="M13.5 1.515a3 3 0 0 0-3 0L3 5.845a3 3 0 0 0-1.5 2.598v7.114A3 3 0 0 0 3 18.155l7.5 4.33a3 3 0 0 0 3 0l7.5-4.33a3 3 0 0 0 1.5-2.598V8.443a3 3 0 0 0-1.5-2.598l-7.5-4.33Z"/></svg>
+                    </div>
+                    <p class="profile-bio">A Software Engineer who has developed countless innovative solutions.</p>
+                    <div class="profile-socials">
+                        <a href="https://github.com/abdulwakeel-cloud" target="_blank" class="social-icon" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg></a>
+                        <a href="https://www.instagram.com/wakinodigital" target="_blank" class="social-icon" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z"/></svg></a>
+                        <a href="https://tiktok.com" target="_blank" class="social-icon" aria-label="TikTok"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+                        <a href="https://wa.me/2349056937682" target="_blank" class="social-icon" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+                    </div>
+                </div>
+                <!-- Content Area -->
+                <div class="subpage-content">
+                    <div class="premium-tools-heading">
+                        <h2 class="premium-label">WEB DEV</h2>
+                        <h2 class="tools-label">THOUGHTS</h2>
+                    </div>
+                    <div class="blog-list">
+                    <button type="button" class="blog-card blog-btn">
                         <div class="blog-meta">
                             <span class="blog-date">Apr 25, 2026</span>
                             <span class="blog-read">6min read</span>
                         </div>
                         <h3 class="blog-title">Decoding the Digital Blueprint: Choosing the Right Website for Your Mission</h3>
                         <p class="blog-desc">A strategic guide to choosing between portfolios, landing pages, blogs, and web applications based on specific business goals.</p>
-                    </a>
+                        <span class="read-more">Read More</span>
+                    </button>
+                    <div class="blog-content hidden">
+                        <p>Building a website is a significant decision that requires understanding your mission and audience. This comprehensive guide walks you through the decision-making process for choosing the right type of website.</p>
+                    </div>
 
-                    <a href="#" class="blog-card">
+                    <button type="button" class="blog-card blog-btn">
                         <div class="blog-meta">
                             <span class="blog-date">Apr 25, 2026</span>
                             <span class="blog-read">4min read</span>
                         </div>
                         <h3 class="blog-title">Beyond the Canvas: Why Every Designer Should Understand the DOM</h3>
                         <p class="blog-desc">Why designers must master the DOM and backend logic to build functional, scalable websites.</p>
-                    </a>
+                        <span class="read-more">Read More</span>
+                    </button>
+                    <div class="blog-content hidden">
+                        <p>Designers often focus purely on aesthetics, but truly great designers understand the technical implementation. The DOM (Document Object Model) is the bridge between design and functionality. Learn why mastering it makes you a better designer.</p>
+                    </div>
 
-                    <a href="#" class="blog-card">
+                    <button type="button" class="blog-card blog-btn">
                         <div class="blog-meta">
                             <span class="blog-date">Mar 15, 2026</span>
                             <span class="blog-read">5min read</span>
                         </div>
                         <h3 class="blog-title">The Power of Less: Why Minimalist Branding Wins in a Noisy World</h3>
                         <p class="blog-desc">Exploring how simple, high-contrast branding improves scalability, memorability, and digital performance for modern businesses.</p>
-                    </a>
+                        <span class="read-more">Read More</span>
+                    </button>
+                    <div class="blog-content hidden">
+                        <p>In an increasingly complex digital landscape, minimalism stands out. Discover how reducing visual noise, increasing contrast, and focusing on essential elements creates memorable brands that perform better across all platforms.</p>
+                    </div>
+
+                    <button type="button" class="blog-card blog-btn">
+                        <div class="blog-meta">
+                            <span class="blog-date">Apr 20, 2026</span>
+                            <span class="blog-read">8min read</span>
+                        </div>
+                        <h3 class="blog-title">React Best Practices: Building Scalable Components for Modern Web Applications</h3>
+                        <p class="blog-desc">Dive into essential React patterns, hooks optimization, and component architecture strategies that reduce technical debt and improve maintainability.</p>
+                        <span class="read-more">Read More</span>
+                    </button>
+                    <div class="blog-content hidden">
+                        <h4>Component Architecture & Composition</h4>
+                        <p>Break down your UI into small, reusable, and single-responsibility components. Functional components with hooks are the modern standard.</p>
+                        <h4>Mastering React Hooks</h4>
+                        <p>Hooks like useState, useEffect, useContext, and useReducer enable state management and side effects in functional components. Master them for better code organization.</p>
+                        <h4>State Management Best Practices</h4>
+                        <p>Keep state as local as possible, lift it up only when necessary, and consider Context API or Redux for complex applications.</p>
+                        <h4>Performance Optimization</h4>
+                        <p>Use React.memo to prevent unnecessary re-renders, useMemo for expensive computations, and useCallback to memoize functions.</p>
+                    </div>
+
+                    <button type="button" class="blog-card blog-btn">
+                        <div class="blog-meta">
+                            <span class="blog-date">Apr 18, 2026</span>
+                            <span class="blog-read">7min read</span>
+                        </div>
+                        <h3 class="blog-title">Modern CSS Techniques: Grid, Flexbox, and CSS Variables Mastery</h3>
+                        <p class="blog-desc">Learn advanced CSS strategies including CSS Grid layouts, Flexbox best practices, and leveraging CSS variables for dynamic theming and responsive designs.</p>
+                        <span class="read-more">Read More</span>
+                    </button>
+                    <div class="blog-content hidden">
+                        <h4>CSS Flexbox: The Flexible Layout System</h4>
+                        <p>Flexbox is perfect for one-dimensional layouts. Use flex-direction, justify-content, and align-items for powerful layout control.</p>
+                        <h4>CSS Grid: Two-Dimensional Layouts</h4>
+                        <p>CSS Grid provides true two-dimensional layout control. Use grid-template-columns and named grid areas for complex page layouts.</p>
+                        <h4>CSS Variables for Dynamic Theming</h4>
+                        <p>CSS Variables enable dynamic theming and reduce repetition. Define variables at :root level and update them programmatically or with data attributes.</p>
+                        <h4>Responsive Layouts Without Media Queries</h4>
+                        <p>Use techniques like grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) to create responsive layouts that adapt automatically.</p>
+                    </div>
+
+                    <button type="button" class="blog-card blog-btn">
+                        <div class="blog-meta">
+                            <span class="blog-date">Apr 16, 2026</span>
+                            <span class="blog-read">9min read</span>
+                        </div>
+                        <h3 class="blog-title">JavaScript Best Practices: Closures, Async/Await, and Memory Management</h3>
+                        <p class="blog-desc">Master JavaScript fundamentals including closures, asynchronous programming patterns, and memory optimization techniques to write clean, efficient code.</p>
+                        <span class="read-more">Read More</span>
+                    </button>
+                    <div class="blog-content hidden">
+                        <h4>Understanding Closures</h4>
+                        <p>Closures are functions with access to variables from another function's scope. Use them for data privacy and the module pattern.</p>
+                        <h4>Mastering Async/Await</h4>
+                        <p>Async/await provides cleaner syntax for handling asynchronous operations. Always handle errors with try/catch and use Promise.all() for parallel operations.</p>
+                        <h4>Memory Management</h4>
+                        <p>Prevent memory leaks by cleaning up event listeners, clearing timers, and avoiding global variables that grow indefinitely.</p>
+                        <h4>Best Practices</h4>
+                        <p>Use const by default, prefer async/await over callbacks, clean up resources, and be aware of the scope chain.</p>
+                    </div>
+
+                    <button type="button" class="blog-card blog-btn">
+                        <div class="blog-meta">
+                            <span class="blog-date">Apr 14, 2026</span>
+                            <span class="blog-read">6min read</span>
+                        </div>
+                        <h3 class="blog-title">Responsive Design Beyond Media Queries: Mobile-First Strategy</h3>
+                        <p class="blog-desc">Explore advanced responsive design principles, mobile-first development strategies, and creating truly accessible layouts that work seamlessly across all devices.</p>
+                        <span class="read-more">Read More</span>
+                    </button>
+                    <div class="blog-content hidden">
+                        <h4>Mobile-First Approach</h4>
+                        <p>Build for mobile first to ensure your application works on the most constrained devices, then gracefully enhance for larger screens.</p>
+                        <h4>Fluid and Flexible Layouts</h4>
+                        <p>Use relative units and flexible properties to adapt to any screen size. Use clamp() for responsive sizing.</p>
+                        <h4>Touch-Friendly Interfaces</h4>
+                        <p>Ensure minimum touch target size of 48x48px, provide adequate spacing, and avoid hover-dependent interactions.</p>
+                        <h4>Accessibility & Performance</h4>
+                        <p>Maintain readable text sizes, sufficient color contrast, and test with screen readers on mobile devices.</p>
+                    </div>
+
+                    <button type="button" class="blog-card blog-btn">
+                        <div class="blog-meta">
+                            <span class="blog-date">Apr 12, 2026</span>
+                            <span class="blog-read">7min read</span>
+                        </div>
+                        <h3 class="blog-title">REST API Design Principles: Building APIs That Scale and Impress</h3>
+                        <p class="blog-desc">Understand REST principles, versioning strategies, error handling, and authentication patterns for building robust APIs that integrate seamlessly with frontend applications.</p>
+                        <span class="read-more">Read More</span>
+                    </button>
+                    <div class="blog-content hidden">
+                        <h4>Resource-Oriented Design</h4>
+                        <p>Design APIs around resources (like users, posts), not actions. Use HTTP methods correctly: GET, POST, PUT, PATCH, DELETE.</p>
+                        <h4>Versioning Strategy</h4>
+                        <p>Use URL-based versioning (/api/v1/users) for clarity and easy caching. This allows you to introduce breaking changes while maintaining backward compatibility.</p>
+                        <h4>Consistent Response Structure</h4>
+                        <p>Return consistent status codes and response formats. Include pagination info for large datasets and comprehensive error messages.</p>
+                        <h4>Security & Rate Limiting</h4>
+                        <p>Implement proper authentication (JWT, OAuth), rate limiting to prevent abuse, and security headers for API protection.</p>
+                    </div>
+
+                    <button type="button" class="blog-card blog-btn">
+                        <div class="blog-meta">
+                            <span class="blog-date">Apr 10, 2026</span>
+                            <span class="blog-read">10min read</span>
+                        </div>
+                        <h3 class="blog-title">Web Security Essentials: Protecting Your Applications from Common Vulnerabilities</h3>
+                        <p class="blog-desc">Comprehensive guide to web security including OWASP top vulnerabilities, CSRF protection, XSS prevention, and secure authentication implementation.</p>
+                        <span class="read-more">Read More</span>
+                    </button>
+                    <div class="blog-content hidden">
+                        <h4>OWASP Top Vulnerabilities</h4>
+                        <p>Understand injection attacks, XSS, CSRF, and other critical vulnerabilities. Use parameterized queries, sanitize inputs, and implement CSRF tokens.</p>
+                        <h4>Authentication & Password Security</h4>
+                        <p>Never store plain text passwords. Use strong hashing algorithms like bcrypt or Argon2, and implement secure password validation rules.</p>
+                        <h4>HTTPS & Security Headers</h4>
+                        <p>Always use HTTPS for all communications. Implement security headers like Content-Security-Policy, X-Frame-Options, and Strict-Transport-Security.</p>
+                        <h4>Input Validation & Error Handling</h4>
+                        <p>Validate and sanitize all user input. Never expose sensitive information in error messages to users.</p>
+                    </div>
+
+                    <button type="button" class="blog-card blog-btn">
+                        <div class="blog-meta">
+                            <span class="blog-date">Apr 08, 2026</span>
+                            <span class="blog-read">8min read</span>
+                        </div>
+                        <h3 class="blog-title">Testing & QA Strategies: Unit Testing, Integration Tests, and E2E Testing</h3>
+                        <p class="blog-desc">Learn comprehensive testing strategies including Jest and Vitest for unit tests, integration testing best practices, and Cypress for end-to-end automation.</p>
+                        <span class="read-more">Read More</span>
+                    </button>
+                    <div class="blog-content hidden">
+                        <h4>The Testing Pyramid</h4>
+                        <p>Follow the pyramid: 70% unit tests, 20% integration tests, 10% E2E tests. This distribution provides good coverage while keeping tests fast.</p>
+                        <h4>Unit Testing with Jest</h4>
+                        <p>Test individual functions in isolation. Use mocks for external dependencies and follow the Arrange-Act-Assert pattern.</p>
+                        <h4>Integration Testing</h4>
+                        <p>Verify that multiple components or modules work together. Test API endpoints, database operations, and component interactions.</p>
+                        <h4>E2E Testing with Cypress</h4>
+                        <p>Simulate real user interactions. Test critical user workflows like login, checkout, and form submissions.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact section animate-on-scroll">
+            <div class="container">
+                <div class="premium-tools-heading">
+                    <h2 class="premium-label">READY TO START</h2>
+                    <h2 class="tools-label">YOUR PROJECT?</h2>
+                </div>
+                <div class="contact-grid">
+                    <!-- Left: Contact Info -->
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <h3>Address</h3>
+                            <p>22, Maryland Estate Aleke Ikorodu<br>Lagos, Nigeria</p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+2349056937682">+234 905 693 7682</a></p>
+                        </div>
+                        <div class="info-item">
+                            <h3>Email</h3>
+                            <p><a href="mailto:wakinodigital@gmail.com">wakinodigital@gmail.com</a></p>
+                        </div>
+                        <div class="info-socials">
+                            <h3>Socials</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/abdulwakeel-cloud" target="_blank" class="social-icon" aria-label="GitHub">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"/></svg>
+                                </a>
+                                <a href="https://www.instagram.com/wakinodigital?utm_source=qr&igsh=MTl4b3BydXZkMTZhMQ==" target="_blank" class="social-icon" aria-label="Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069ZM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0Zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324ZM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8Zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881Z"/></svg>
+                                </a>
+                                <a href="https://tiktok.com" target="_blank" class="social-icon" aria-label="TikTok">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+                                </a>
+                                <a href="https://wa.me/2349056937682" target="_blank" class="social-icon" aria-label="WhatsApp">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="info-map" style="margin-top: auto; padding-top: 16px;">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126844.06230489956!2d3.2704257176189955!3d6.540131435216335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b285ee45cb5%3A0x17c91979b009f485!2sLagos%2C%20Nigeria!5e0!3m2!1sen!2sus!4v1714013444000!5m2!1sen!2sus" width="100%" height="220" style="border:0; border-radius: 16px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <!-- Right: Form -->
+                    <form class="contact-form" id="contactForm">
+                        <input type="hidden" name="access_key" value="2afd1843-33f7-4199-8d02-dc046afd8df4">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+1 (234) 567-8900" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Submit</button>
+                        <div id="form-status" class="form-status-message"></div>
+                    </form>
                 </div>
             </div>
         </section>

@@ -147,6 +147,54 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Blog Entry Wrapping: auto-wrap each blog-btn + blog-content pair into a blog-entry div
+    const blogList = document.querySelector('.blog-list');
+    if (blogList) {
+        const buttons = blogList.querySelectorAll(':scope > .blog-btn');
+        buttons.forEach(btn => {
+            const content = btn.nextElementSibling;
+            if (content && content.classList.contains('blog-content')) {
+                const entry = document.createElement('div');
+                entry.className = 'blog-entry';
+                btn.parentNode.insertBefore(entry, btn);
+                entry.appendChild(btn);
+                entry.appendChild(content);
+            }
+        });
+    }
+
+    // Blog Expand/Collapse Functionality
+    const blogButtons = document.querySelectorAll('.blog-btn');
+    blogButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const entry = button.closest('.blog-entry');
+            const content = entry ? entry.querySelector('.blog-content') : button.nextElementSibling;
+            if (content && content.classList.contains('blog-content')) {
+                const isHidden = content.classList.contains('hidden');
+                
+                // Close all other open blogs
+                document.querySelectorAll('.blog-content').forEach(c => {
+                    if (c !== content) {
+                        c.classList.remove('expanded');
+                        c.classList.add('hidden');
+                    }
+                });
+
+                // Toggle current blog
+                if (isHidden) {
+                    content.classList.remove('hidden');
+                    content.classList.add('expanded');
+                    setTimeout(() => {
+                        button.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                } else {
+                    content.classList.remove('expanded');
+                    content.classList.add('hidden');
+                }
+            }
+        });
+    });
 });
 
 // --- Theme Toggle Logic ---
