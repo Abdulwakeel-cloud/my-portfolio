@@ -18,16 +18,16 @@ if (preloader && loaderCounter) {
             setTimeout(() => {
                 preloader.remove();
             }, 1200); // Wait for slide up transition to finish
-        }, 300);
+        }, 100);
     };
 
     const counterInterval = setInterval(() => {
         // Increment count: randomness adds a realistic "loading" feel
-        // Usually count finishes in ~1.2 seconds if not loaded
-        count += Math.floor(Math.random() * 3) + 1;
+        // Make it faster to reduce loading time
+        count += Math.floor(Math.random() * 6) + 4;
         
         // If window is loaded, we can jump faster
-        if (isLoaded && count < 80) count += 5;
+        if (isLoaded && count < 80) count += 15;
 
         if (count >= 100) {
             count = 100;
@@ -42,7 +42,7 @@ if (preloader && loaderCounter) {
         } else {
             updateCounterUI(count);
         }
-    }, 20);
+    }, 15);
 
     function updateCounterUI(val) {
         loaderCounter.textContent = val + '%';
@@ -215,13 +215,16 @@ const sunSVG = `
 const moonSVG = `<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>`;
 
 function setTheme(theme) {
+    const profileImages = document.querySelectorAll('.profile-photo-wrap img');
     if (theme === 'light') {
         document.documentElement.setAttribute('data-theme', 'light');
         if (themeIcon) themeIcon.innerHTML = moonSVG; // Show moon when in light mode
+        profileImages.forEach(img => img.src = 'image/profile pix.webp');
         localStorage.setItem('theme', 'light');
     } else {
         document.documentElement.removeAttribute('data-theme');
         if (themeIcon) themeIcon.innerHTML = sunSVG; // Show sun when in dark mode
+        profileImages.forEach(img => img.src = 'image/profile pix.png');
         localStorage.setItem('theme', 'dark');
     }
 }
